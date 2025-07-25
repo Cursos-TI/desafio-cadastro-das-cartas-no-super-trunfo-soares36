@@ -106,6 +106,4 @@ int main() {
 
     return 0;
 
-para sal
-
 }
