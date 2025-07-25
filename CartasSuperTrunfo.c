@@ -1,41 +1,33 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
 
 int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    char estado[2];
-    char codigodacidade[40];
+
+    char estado[3];
+    char codigodacidade[5];
     char cidade[50];
     int populacao;
     float area;
     float pib;
     int NumerodePontosTuristicos;
-    float DensidadePopulacional = (float)(populacao / area);
-    float PIBPerCapita = (float)(pib / populacao);
+    float DensidadePopulacional;
+    float PIBPerCapita;
 
-    char estado1[2];
-    char codigodacidade1[40];
+    char estado1[3];
+    char codigodacidade1[5];
     char cidade1[50];
     int populacao1;
     float area1;
     float pib1;
     int NumerodePontosTuristicos1;
-    float DensidadePopulacional1 = (float)(pib1 / populacao1);
-    float PIBPerCapita1 = (float)(populacao1 / area1);
+    float DensidadePopulacional1;
+    float PIBPerCapita1;
 
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
+
     printf("Digite os dados da Carta 1\n");
 
     printf("Digite seu estado [de A a H]:\n");
-    scanf("%1s", estado);
+    scanf("%2s", estado);
 
     printf("Digite o codigo da carta [de 1 a 4]: \n");
     scanf("%4s", codigodacidade);
@@ -58,7 +50,7 @@ int main() {
     printf("Digite os dados da Carta 2\n");
 
     printf("Digite seu estado [de A a H]:\n");
-    scanf("%1s", estado1);
+    scanf("%2s", estado1);
 
     printf("Digite o codigo da carta [de 1 a 4]: \n");
     scanf("%4s", codigodacidade1);
@@ -78,9 +70,6 @@ int main() {
     printf("Digite quantos pontos turisticos sua cidade tem: \n");
     scanf("%i", &NumerodePontosTuristicos1);
 
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
 
     printf("Aqui estão os dados da Carta 1:\n");
     printf("Estado: %s\n", estado);  
@@ -90,7 +79,9 @@ int main() {
     printf("Area: %.2f km²\n", area);
     printf("PIB: %.2f bilhoes de reais\n", pib); 
     printf("Numero de pontos turisticos: %d\n", NumerodePontosTuristicos);
+    DensidadePopulacional = (float)populacao / area;
     printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional);
+    PIBPerCapita = (float)pib / populacao;
     printf("PIB Per Capita: %.2f reais\n", PIBPerCapita);
 
     printf("Aqui estão os dados da Carta 2:\n");
@@ -101,11 +92,13 @@ int main() {
     printf("Area: %.2f km²\n", area1);  
     printf("PIB: %.2f bilhoes de reais\n", pib1);  
     printf("Numero de pontos turisticos: %d\n", NumerodePontosTuristicos1);
+    DensidadePopulacional1 = (float)populacao1 / area1;
     printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional1);
-    printf("PIB Per Capita: %.2f reais\n", PIBPerCapita1);
+    PIBPerCapita1 = (float)pib1 / populacao1;
+    printf("PIB Per Capita: %.2f reais\n", PIBPerCapita1); 
+
 
     return 0;
 
-para sal
 
 }
