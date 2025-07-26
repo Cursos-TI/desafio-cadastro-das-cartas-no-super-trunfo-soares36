@@ -71,30 +71,30 @@ int main() {
     scanf("%i", &NumerodePontosTuristicos1);
 
 
-    printf("Aqui estão os dados da Carta 1:\n");
+    printf("Aqui estao os dados da Carta 1:\n");
     printf("Estado: %s\n", estado);  
     printf("Codigo da cidade: %s\n", codigodacidade);
     printf("Cidade: %s\n", cidade);
-    printf("Populaçao: %d\n", populacao); 
+    printf("Populacao: %d\n", populacao); 
     printf("Area: %.2f km²\n", area);
     printf("PIB: %.2f bilhoes de reais\n", pib); 
     printf("Numero de pontos turisticos: %d\n", NumerodePontosTuristicos);
     DensidadePopulacional = (float)populacao / area;
     printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional);
-    PIBPerCapita = (float)pib / populacao;
+    PIBPerCapita = (float)(pib * 1000000000)/ populacao;
     printf("PIB Per Capita: %.2f reais\n", PIBPerCapita);
 
-    printf("Aqui estão os dados da Carta 2:\n");
+    printf("Aqui estao os dados da Carta 2:\n");
     printf("Estado: %s\n", estado1);  
     printf("Codigo da cidade: %s\n", codigodacidade1);
     printf("Cidade: %s\n", cidade1);
-    printf("Populaçao: %d\n", populacao1);  
+    printf("Populacao: %d\n", populacao1);  
     printf("Area: %.2f km²\n", area1);  
     printf("PIB: %.2f bilhoes de reais\n", pib1);  
     printf("Numero de pontos turisticos: %d\n", NumerodePontosTuristicos1);
     DensidadePopulacional1 = (float)populacao1 / area1;
     printf("Densidade Populacional: %.2f hab/km²\n", DensidadePopulacional1);
-    PIBPerCapita1 = (float)pib1 / populacao1;
+    PIBPerCapita1 = (float)(pib1 * 1000000000) / populacao1;
     printf("PIB Per Capita: %.2f reais\n", PIBPerCapita1); 
 
 
