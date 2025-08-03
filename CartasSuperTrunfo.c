@@ -121,6 +121,18 @@ int main() {
     printf("PIB per Capita: Carta %d venceu (%d)\n", (PIBPerCapita > PIBPerCapita1) ? 1 : 2, (PIBPerCapita > PIBPerCapita1) ? 1 : 0);
     printf("Super Poder: Carta %d venceu (%d)\n", (SuperPoder > SuperPoder1) ? 1 : 2, (SuperPoder > SuperPoder1) ? 1 : 0);
 
+// 1. Comparação por POPULAÇÃO (maior valor vence)
+
+    printf("\nComparacao por POPULACAO:\n");
+    printf("Carta 1 - %s: %d habitantes\n", cidade, populacao);
+    printf("Carta 2 - %s: %d habitantes\n", cidade1, populacao1);
+
+     if (populacao > populacao1) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", cidade);
+    } else if (populacao1 > populacao) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", cidade1);
+    }
+
     return 0;
 
 }
